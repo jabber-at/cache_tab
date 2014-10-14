@@ -1,0 +1,17 @@
+Description: remove deps in rebar.config
+ Without this patch, rebar would download and compile the listed deps
+ at compile time.                                                                                                                                                                                                                                                                
+Author: Philipp Huebner <debalance@debian.org>
+
+Index: erlang-p1-cache-tab/rebar.config
+===================================================================
+--- erlang-p1-cache-tab.orig/rebar.config
++++ erlang-p1-cache-tab/rebar.config
+@@ -1,7 +1,5 @@
+ {erl_opts, [debug_info]}.
+ 
+-{deps, [{p1_utils, ".*", {git, "git://github.com/processone/p1_utils"}}]}.
+-
+ %% Local Variables:
+ %% mode: erlang
+ %% End:
