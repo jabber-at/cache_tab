@@ -1,6 +1,7 @@
 erlang-p1-cache-tab (0.2015.06.28-0.1local) unstable; urgency=medium
 
   * Imported Upstream version 0.2015.06.28
+  * Add erlang-syntax-tools as direct dependency.
 
  -- Mathias Ert <mati@jabber.at>  Sat, 04 Jul 2015 11:27:33 +0200
 
