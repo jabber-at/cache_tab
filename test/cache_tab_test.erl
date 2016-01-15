@@ -1,8 +1,9 @@
 %%%----------------------------------------------------------------------
-%%% File    : rebar.config
-%%% Author  : Evgeniy Khramtsov <ekhramtsov@process-one.net>
-%%% Purpose : Rebar build script. Compliant with rebar and rebar3.
-%%% Created : 8 May 2013 by Evgeniy Khramtsov <ekhramtsov@process-one.net>
+%%% File    : cache_tab_test.erl
+%%% Author  : Mickael Remond <mremond@process-one.net>
+%%% Purpose : cache_tab module tests 
+%%% Created : 10 Dec 2015 by Mickael Remond <mremond@process-one.net>
+%%%
 %%%
 %%% Copyright (C) 2002-2015 ProcessOne, SARL. All Rights Reserved.
 %%%
@@ -20,16 +21,11 @@
 %%%
 %%%----------------------------------------------------------------------
 
-{erl_opts, [debug_info]}.
+-module(cache_tab_test).
 
-{deps, [{p1_utils, ".*", {git, "https://github.com/processone/p1_utils", {tag, "1.0.2"}}}]}.
+-compile(export_all).
 
-{cover_enabled, true}.
-{cover_export_enabled, true}.
+-include_lib("eunit/include/eunit.hrl").
 
-{xref_checks, [undefined_function_calls, undefined_functions, deprecated_function_calls, deprecated_functions]}.
-
-%% Local Variables:
-%% mode: erlang
-%% End:
-%% vim: set filetype=erlang tabstop=8:
+dummy_test() ->
+    ?assertEqual(ok, ok).
