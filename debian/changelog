@@ -7,6 +7,7 @@ erlang-p1-cache-tab (1.0.1-0.1) unstable; urgency=medium
   * Name me as a maintainer in debian/control.
   * Set minimum version for erlang-p1-utils to 1.0.1.
   * Use upstream tags for source packages.
+  * Fix duplicate license paragraph in debian/copyright.
 
  -- Mathias Ert <mati@jabber.at>  Fri, 15 Jan 2016 10:01:34 +0100
 
