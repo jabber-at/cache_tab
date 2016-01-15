@@ -8,21 +8,22 @@ erlang-p1-cache-tab (1.0.1-0.1) unstable; urgency=medium
   * Set minimum version for erlang-p1-utils to 1.0.1.
   * Use upstream tags for source packages.
   * Fix duplicate license paragraph in debian/copyright.
+  * Fix typo in my (Mathias Ertl) last name in debian/changelog.
 
- -- Mathias Ert <mati@jabber.at>  Fri, 15 Jan 2016 10:01:34 +0100
+ -- Mathias Ertl <mati@jabber.at>  Fri, 15 Jan 2016 10:01:34 +0100
 
 erlang-p1-cache-tab (0.2015.06.28-0.1local) unstable; urgency=medium
 
   * Imported Upstream version 0.2015.06.28
   * Add erlang-syntax-tools as direct dependency.
 
- -- Mathias Ert <mati@jabber.at>  Sat, 04 Jul 2015 11:27:33 +0200
+ -- Mathias Ertl <mati@jabber.at>  Sat, 04 Jul 2015 11:27:33 +0200
 
 erlang-p1-cache-tab (0.2015.01.09-0.1local) unstable; urgency=medium
 
   * Imported Upstream version 0.2015.01.09
 
- -- Mathias Ert <mati@jabber.at>  Fri, 06 Mar 2015 23:14:06 +0100
+ -- Mathias Ertl <mati@jabber.at>  Fri, 06 Mar 2015 23:14:06 +0100
 
 erlang-p1-cache-tab (0.2014.07.17-1) unstable; urgency=medium
 
