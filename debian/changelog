@@ -5,6 +5,7 @@ erlang-p1-cache-tab (1.0.1-0.1) unstable; urgency=medium
     hence the versioning has changed.
   * Add VCS-* fields.
   * Name me as a maintainer in debian/control.
+  * Set minimum version for erlang-p1-utils to 1.0.2.
 
  -- Mathias Ert <mati@jabber.at>  Fri, 15 Jan 2016 10:01:34 +0100
 
