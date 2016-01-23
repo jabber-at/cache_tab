@@ -1,3 +1,9 @@
+erlang-p1-cache-tab (1.0.1-0.2) unstable; urgency=medium
+
+  * Merge changes from the upstream package.
+
+ -- Mathias Ertl <mati@jabber.at>  Sat, 23 Jan 2016 16:18:29 +0100
+
 erlang-p1-cache-tab (1.0.1-0.1) unstable; urgency=medium
 
   * New upstream release.
