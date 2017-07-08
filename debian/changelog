@@ -1,3 +1,9 @@
+erlang-p1-cache-tab (1.0.9-0.2) unstable; urgency=medium
+
+  * Install .so files in priv/.
+
+ -- Mathias Ertl <mati@jabber.at>  Sat, 08 Jul 2017 12:52:07 +0200
+
 erlang-p1-cache-tab (1.0.9-0.1) unstable; urgency=medium
 
   * New upstream release.
