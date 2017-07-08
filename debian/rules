@@ -14,8 +14,8 @@ override_dh_auto_install:
 	for file in priv/lib/*.so ; do \
 		fname=$$(basename $${file}) ; \
 		subdir=$$(dirname $${file}) ; \
-		if [ ! -f $(DESTDIR)/usr/lib/erlang/lib/p1_xmpp-$(DEB_VERSION_UPSTREAM)/$${subdir}/$${fname} ] ; then \
-			install -m 755 -d $(DESTDIR)/usr/lib/erlang/lib/p1_xmpp-$(DEB_VERSION_UPSTREAM)/$${subdir} ; \
-			install -m 644 $${file} $(DESTDIR)/usr/lib/erlang/lib/p1_xmpp-$(DEB_VERSION_UPSTREAM)/$${subdir} ; \
+		if [ ! -f $(DESTDIR)/usr/lib/erlang/lib/p1_cache_tab-$(DEB_VERSION_UPSTREAM)/$${subdir}/$${fname} ] ; then \
+			install -m 755 -d $(DESTDIR)/usr/lib/erlang/lib/p1_cache_tab-$(DEB_VERSION_UPSTREAM)/$${subdir} ; \
+			install -m 644 $${file} $(DESTDIR)/usr/lib/erlang/lib/p1_cache_tab-$(DEB_VERSION_UPSTREAM)/$${subdir} ; \
 		fi ; \
 	done
