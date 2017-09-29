@@ -1,6 +1,7 @@
 #!/usr/bin/make -f
 #export DH_VERBOSE=1
 
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 include /usr/share/dpkg/default.mk
 
 DESTDIR=$(CURDIR)/debian/erlang-p1-cache-tab
@@ -9,9 +10,10 @@ DESTDIR=$(CURDIR)/debian/erlang-p1-cache-tab
 %:
 	dh $@ --buildsystem=rebar --with rebar
 
+
 override_dh_auto_install:
 	dh_auto_install
-	for file in priv/lib/*.so ; do \
+	for file in include/*.hrl priv/lib/*.so ; do \
 		fname=$$(basename $${file}) ; \
 		subdir=$$(dirname $${file}) ; \
 		if [ ! -f $(DESTDIR)/usr/lib/erlang/lib/p1_cache_tab-$(DEB_VERSION_UPSTREAM)/$${subdir}/$${fname} ] ; then \
