@@ -3,6 +3,7 @@ erlang-p1-cache-tab (1.0.11-0.1) unstable; urgency=medium
   * New upstream release.
   * Update watch file.
   * debian/rules: Install header files and enable hardening.
+  * Update copyright file.
 
  -- Mathias Ertl <mati@jabber.at>  Fri, 29 Sep 2017 19:54:34 +0200
 
