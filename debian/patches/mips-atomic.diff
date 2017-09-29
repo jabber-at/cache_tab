@@ -1,0 +1,28 @@
+Description: fix FTBFS on mips, mipsel and powerpc
+ mips, mipsel and powerpc do not implement 64-bit atomics
+ natively. The fix is to use libatomic (part of GCC) which provides
+ helper routines for these missing atomics, implemented using locks.
+Author: James Cowgill <jcowgill@debian.org>
+
+--- a/c_src/ets_cache.c
++++ b/c_src/ets_cache.c
+@@ -100,7 +100,7 @@ static ERL_NIF_TERM incr_counter(ErlNifE
+   if (enif_get_uint(env, argv[0], &counter))
+     if (counter < max_counters) {
+       if (counters[counter] != MAX_UINT64)
+-	return enif_make_uint64(env, __sync_add_and_fetch(counters + counter, 1));
++	return enif_make_uint64(env, __atomic_add_fetch(counters + counter, 1, __ATOMIC_SEQ_CST));
+     }
+ 
+   return enif_make_badarg(env);
+--- a/rebar.config
++++ b/rebar.config
+@@ -24,7 +24,7 @@
+ 
+ 
+ {port_specs, [{"priv/lib/ets_cache.so", ["c_src/ets_cache.c"]}]}.
+-{port_env, [{"CFLAGS", "$CFLAGS -g -O2 -Wall"}]}.
++{port_env, [{"CFLAGS", "$CFLAGS -g -O2 -Wall"}, {"LDFLAGS", "$LDFLAGS -latomic"}]}.
+ 
+ {cover_enabled, true}.
+ {cover_export_enabled, true}.
