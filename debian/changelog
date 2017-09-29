@@ -4,6 +4,8 @@ erlang-p1-cache-tab (1.0.11-0.1) unstable; urgency=medium
   * Update watch file.
   * debian/rules: Install header files and enable hardening.
   * Update copyright file.
+  * Update Standards-Version to 4.1.0 (no changes needed).
+  * Add erlang-base as build-dependency.
 
  -- Mathias Ertl <mati@jabber.at>  Fri, 29 Sep 2017 19:54:34 +0200
 
