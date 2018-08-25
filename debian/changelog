@@ -4,6 +4,7 @@ erlang-p1-cache-tab (1.0.14-0.1) unstable; urgency=medium
   * Added debian/upstream/metadata
   * Use secure copyright format uri in debian/copyright
   * Updated years in debian/copyright
+  * Updated Standards-Version: 4.1.4 (no changes needed)
 
  -- Mathias Ertl <mati@jabber.at>  Sat, 25 Aug 2018 15:27:59 +0200
 
