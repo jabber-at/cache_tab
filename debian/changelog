@@ -5,6 +5,7 @@ erlang-p1-cache-tab (1.0.14-0.1) unstable; urgency=medium
   * Use secure copyright format uri in debian/copyright
   * Updated years in debian/copyright
   * Updated Standards-Version: 4.1.4 (no changes needed)
+  * Switched to debhelper 11
 
  -- Mathias Ertl <mati@jabber.at>  Sat, 25 Aug 2018 15:27:59 +0200
 
