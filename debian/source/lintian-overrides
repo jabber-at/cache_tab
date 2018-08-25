@@ -1,2 +1,4 @@
-source: maintainer-upload-has-incorrect-version-number
-source: unknown-field-in-dsc orig-maintainer
+erlang-p1-cache-tab source: maintainer-upload-has-incorrect-version-number
+erlang-p1-cache-tab source: unknown-field-in-dsc orig-maintainer
+erlang-p1-cache-tab source: debian-watch-does-not-check-gpg-signature
+erlang-p1-cache-tab source: testsuite-autopkgtest-missing
