@@ -1,11 +1,13 @@
-erlang-p1-cache-tab (1.0.14-1.1) unstable; urgency=medium
+erlang-p1-cache-tab (1.0.14-0.1) unstable; urgency=medium
 
   * New upstream version 1.0.14
   * Added debian/upstream/metadata
-  * Use secure copyright format uri in debian/copyright
-  * Updated years in debian/copyright
   * Updated Standards-Version: 4.1.4 (no changes needed)
+  * Use secure copyright format uri in debian/copyright
   * Switched to debhelper 11
+  * Set Orig-Maintainer: Ejabberd Packaging Team
+    <ejabberd@packages.debian.org>
+  * Updated years in debian/copyright
 
  -- Mathias Ertl <mati@jabber.at>  Sat, 25 Aug 2018 15:27:59 +0200
 
